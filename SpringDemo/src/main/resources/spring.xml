@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="Dev" class="org.HabJass250.Dev" autowire="byType">
+<!--      <property name="comp" ref="lap1"/>-->
+<!--      <property name="laptop" ref="lap1"/>-->
+<!--      <constructor-arg ref="lap1"/>-->
+<!--      <property name="age" value="10" /> // setter-->
+<!--      <constructor-arg value="10"/>-->
+<!--      constructor-->
+   </bean>
+
+   <bean id="Dev1" class="org.HabJass250.Dev">
+   </bean>
+
+   <bean id="lap1" class="org.HabJass250.Laptop" primary="true"/>
+   <bean id="desk1" class="org.HabJass250.Desktop">
+   </bean>
+
+</beans>
